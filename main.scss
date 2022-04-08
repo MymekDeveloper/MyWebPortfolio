@@ -1,0 +1,613 @@
+:root {
+    --font-primary: "Poppins", arial;
+}
+
+body {
+    height: 100vh;
+    margin: 0;
+    font-family: var(--font-primary);
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+}
+
+.nav-container {
+    background: #FFF;
+
+    a {
+        color: #110F48;
+    }
+}
+
+.main-nav {
+    display: none;
+}
+
+.menu-btn {
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.menu-btn span {
+    width: 100%;
+    height: .1875rem;
+    background-color: #110F48;
+}
+
+.menu-btn.btn-white span {
+    background-color: white;
+}
+
+#side-drawer {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    background-color: #110F48;
+    z-index: 100;
+}
+
+#side-drawer:target {
+    display: block;
+}
+
+#side-drawer header {
+    height: 5rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 5%;
+}
+
+#side-drawer ul {
+    list-style: none;
+    margin: 0;
+    padding: 3rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+#side-drawer a {
+    color: white;
+    font-size: 1.5rem;
+}
+
+#main-header li {
+    margin: 0 1rem;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5%;
+    height: 5rem;
+
+    .logo {
+        color: #7000FF;
+        font-weight: bold;
+    }
+
+    nav {
+        float: right;
+
+        ul {
+            display: flex;
+
+
+            a {
+                display: block;
+                padding: 0 1em;
+            }
+        }
+    }
+}
+
+.social-header {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 0.7rem;
+}
+
+.social-header img {
+    width: 2rem;
+}
+
+.hero-container {
+    background: url("Pictures/circle-background.png") no-repeat bottom right;
+    background-size: 35%;
+}
+
+.hero {
+    color: #110F48;
+    display: grid;
+    margin-bottom: 4rem;
+    text-align: center;
+}
+
+.meet {
+    font-weight: 400;
+    color: #728097;
+    text-align: center;
+}
+
+.two-buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.btn {
+    width: 250px;
+    height: 40px;
+    border-radius: 30px;
+    border: none;
+    color: white;
+    font-family: inherit;
+    transition: background-color 0.4s ease-out;
+    cursor: pointer;
+}
+
+.btn.primary {
+    background: #7000FF;
+}
+
+.btn.primary:hover {
+    background: #8020fc;
+}
+
+.btn.secondary {
+    color: #110F48;
+    border: 1px solid #D1D1D1;
+    box-sizing: border-box;
+    box-shadow: 0px 8px 8px 2px rgba(0, 0, 0, 0.05);
+}
+
+.btn.secondary:hover {
+    border: none;
+    background: #c7c7fc;
+}
+
+.scroll {
+    display: none;
+}
+
+section {
+    padding: 4em 2em;
+    text-align: center;
+}
+
+.featured-desc.skill-desc {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 36px;
+    text-align: center;
+    color: #110F48;
+}
+
+.featured {
+    position: relative;
+}
+
+.featured::before {
+    content: "";
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: #25C0B7;
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.subtitle {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #110F48;
+    letter-spacing: .2rem;
+    font-size: .85rem;
+}
+
+.featured-title {
+    color: #7000FF;
+    font-weight: bold;
+    font-size: 1.3rem;
+    margin-top: .4rem;
+    display: block;
+}
+
+.featured-desc {
+    color: #110F48;
+    margin-bottom: 3rem;
+    font-size: .85em;
+    line-height: 1.8rem;
+    font-weight: 500;
+}
+
+.skills {
+    background: #25C0B7;
+
+}
+
+.skills-container ul li {
+
+    background: white;
+    padding: 2rem;
+    border-radius: 16px;
+    margin-bottom: 1rem;
+
+    .icon-container {
+        height: 100px;
+        display: grid;
+        place-content: center;
+        margin: 0 auto;
+
+        &.one {
+            width: 50px;
+        }
+
+        &.two {
+            width: 150px;
+        }
+
+        &.three {
+            width: 60px;
+        }
+    }
+
+    .featured-desc {
+        margin-bottom: 2rem;
+    }
+}
+
+.skill-title {
+    font-family: var(--font-primary);
+    font-weight: 700;
+}
+
+.portfolio {
+    background: #F7F7F7;
+}
+
+.portfolio-container a img.phone {
+    width: 10rem;
+    border-radius: 1rem;
+    margin-bottom: 2rem;
+}
+
+.footer-nav {
+    display: none;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("Pictures/background_footer.png") no-repeat center center;
+    background-size: cover;
+    padding-top: -4rem;
+}
+
+footer a {
+    color: #FEE272;
+    font: inherit;
+}
+
+@media only screen and (min-width: 800px) {
+
+    .featured,
+    .portfolio {
+        text-align: left;
+    }
+
+    .featured,
+    .portfolio-container {
+        display: grid;
+        grid-template-columns: 40% auto;
+    }
+
+    .left,
+    .portfolio-left {
+        display: grid;
+    }
+
+    .right {
+        margin-left: 2rem;
+        margin-top: 1rem;
+    }
+
+    .skills {
+        margin-top: -5rem;
+        margin-bottom: -7rem;
+        padding-top: 7rem;
+    }
+
+    .skills-container ul {
+        display: grid;
+        grid-template-columns: repeat(3, 420px);
+        grid-gap: 5rem;
+        place-content: center;
+
+    }
+
+    .skill-title {
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 33px;
+        text-align: center;
+        color: #110F48;
+    }
+
+    .featured-desc.skill-desc {
+        font-weight: 500;
+        font-size: 25px;
+        line-height: 36px;
+        text-align: center;
+        color: #110F48;
+    }
+
+    .icon-container img {
+        width: 100px;
+    }
+
+    .skill-two {
+        width: 200px!important;
+    }
+
+
+    .skills-container .transition2 {
+        padding: 8rem 3rem 0rem 3rem;
+    }
+
+    .hero-container {
+        background-size: 70%;
+    }
+
+    .portfolio {
+        padding-top: 7rem;
+    }
+
+    .portfolio-container img {
+        margin-left: 2rem;
+    }
+}
+
+@media only screen and (min-width: 1050px) {
+    .hero {
+        height: 90vh;
+    }
+
+    .logo {
+        font-size: 2rem;
+        padding-right: 4rem;
+    }
+
+    .menu-btn {
+        display: none;
+    }
+
+    .main-nav {
+        display: block;
+    }
+
+    .meet p {
+        font-weight: 400;
+        font-size: 25px;
+        color: #728097;
+        margin: 0;
+        margin-bottom: 1.5rem;
+    }
+
+    .two-buttons {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        gap: 2rem;
+    }
+
+    .btn {
+        width: 400px;
+        height: 60px;
+        font-size: 1.35994rem;
+    }
+
+    .scroll {
+        margin-top: 72px;
+        display: block;
+    }
+
+    .nav-container {
+        header {
+            background: #ffffff;
+        }
+        header a:hover {
+            transition: color 0.4s ease-out;
+            color: #8020fc;
+        }
+    }
+
+    .main-nav li {
+        font-weight: 700;
+    }
+
+    header {
+        padding: 2rem 2rem 2rem 4rem;
+    }
+
+    section {
+        padding: 4rem;
+        display: block;
+    }
+
+    .hero-container {
+        background: url("Pictures/biznes.png") no-repeat bottom right;
+        background-size: contain;
+        height: 600px;
+
+    }
+
+    .hero {
+        padding: 0;
+
+        .content {
+            margin: 2rem 1.5rem 6rem 4rem;
+            text-align: left;
+            height: 600px;
+            display: flex;
+            justify-content: space-between;
+
+            h1 {
+                font-weight: 700;
+                font-size: 83px;
+                color: #110F48;
+                margin: 0;
+            }
+        }
+    }
+
+    .social-header {
+        align-items: flex-end;
+        margin-bottom: 6rem;
+    }
+
+    .social-header img {
+        width: 60px;
+    }
+
+    .subtitle {
+        font-size: 27px;
+        margin: 0;
+    }
+
+    .featured {
+        display: flex;
+        justify-content: space-between;
+        padding-right: 0;
+    }
+
+    .featured-title {
+        font-size: 45px;
+    }
+
+    .inner.transition2 {
+        padding-left: 3.5rem;
+    }
+
+    .featured img {
+        width: 926px;
+        object-fit: contain;
+    }
+
+    .featured-desc {
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 45px;
+        color: #728097;
+    }
+
+    .skills {
+        padding-top: 24rem;
+        margin-top: -8rem;
+    }
+
+    .portfolio-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .MAD {
+        width: 960px;
+        object-fit: contain;
+    }
+
+    .meet {
+        margin: unset;
+        text-align: left;
+    }
+
+    .hero-design {
+        display: unset;
+        margin-left: -50%;
+        margin-top: 15%;
+        width: 100%;
+    }
+
+    .portfolio-container {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 360px;
+    }
+
+    .portfolio-container a img.phone {
+        width: 100%;
+    }
+
+    .portfolio-right {
+        display: flex;
+        align-items: flex-end;
+    }
+
+    .portfolio-left {
+        width: 550px;
+    }
+
+    .portfolio-container:last-child {
+        margin: 0;
+    }
+
+    footer {
+        display: flex;
+        justify-content: flex-start;
+        background: url("Pictures/background_footer.png") no-repeat center center;
+        background-size: cover;
+        padding-bottom: 16rem;
+        padding-top: 1.5rem;
+    }
+
+    .footer-logo {
+        padding-right: 2.5rem;
+        font-weight: 700;
+        font-size: 39px;
+        color: #FEE272;
+    }
+
+    .footer-nav a {
+        color: white;
+    }
+    .footer-nav a:hover {
+        transition: color 0.4s ease-out;
+        color: #25C0B7;
+    }
+
+    .footer-nav {
+        display: block;
+    }
+
+    header {
+        justify-content: flex-start;
+    }
+
+}
