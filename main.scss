@@ -487,7 +487,7 @@ footer a {
 
         .content {
             margin: 2rem 1.5rem 6rem 4rem;
-            text-align: left;
+            
             height: 600px;
             display: flex;
             justify-content: space-between;
@@ -496,6 +496,7 @@ footer a {
                 font-weight: 700;
                 font-size: 83px;
                 color: #110F48;
+                text-align: left;
                 margin: 0;
             }
         }
