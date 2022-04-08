@@ -161,6 +161,10 @@ header nav ul a {
   width: 2rem;
 }
 
+.social-header img {
+  width: 2rem;
+}
+
 .hero-container {
   background: url("Pictures/circle-background.png") no-repeat bottom right;
   background-size: 35%;
